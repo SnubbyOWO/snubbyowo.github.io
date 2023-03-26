@@ -25,6 +25,7 @@ header {
   margin-bottom: 20px;
   position: relative;
 }
+
 .profile {
   width: 150px;
   margin-bottom: 10px;
@@ -55,12 +56,50 @@ nav li {
   font-size: 18px;
 }
 
-nav img {
+nav img.profile {
   width: 100px;
   margin-right: 10px;
   text-align: bottom;
   border-radius: 50%;
 }
+
+.icons img {
+  vertical-align: cen;
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.icons img:hover {
+  animation: increasesize .2s forwards ease-in;
+}
+
+.icons img:not(:hover) {
+  animation: decreasesize .2s forwards ease-in-out;
+}
+
+@keyframes increasesize {
+  100% {
+    opacity: 1;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@keyframes decreasesize {
+  from {
+    opacity: 1;
+    height: 50px;
+    width: 50px;
+  }
+  100% {
+    opacity: 0.5;
+    height: 30px;
+    width: 30px;
+  }
+}
+
 
 section {
   margin: 0 auto;
