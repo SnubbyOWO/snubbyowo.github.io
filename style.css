@@ -120,6 +120,7 @@ footer {
   animation: bg-animation 25s infinite;
   height: 3%;
   opacity 0.2;
+  text-size: 12px;
 }
 
 footer:hover {
