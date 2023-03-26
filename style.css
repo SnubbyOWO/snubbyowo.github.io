@@ -116,7 +116,7 @@ footer {
   width: 99%;
   background-image: var(--gradient2);
   animation: bg-animation 25s infinite;
-  height: 8%;
+  height: 3%;
 }
 .center-text{
   text-align:center;
@@ -124,5 +124,9 @@ footer {
 
 #owned-games {
   text-align:center;
+}
+
+img {
+  border-radius: 15px;
 }
 
