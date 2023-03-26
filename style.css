@@ -32,6 +32,7 @@ header img {
 }
 
 nav {
+  border-radius: 15px;
   background-color: #fb9940;
   color: white;
   display: flex;
@@ -106,6 +107,7 @@ section h3 {
 }
 
 footer {
+  border-radius: 15px;
   z-index: 8;
   position: fixed;
   bottom: 0;
@@ -117,6 +119,11 @@ footer {
   background-image: var(--gradient2);
   animation: bg-animation 25s infinite;
   height: 3%;
+  opacity 0.2;
+}
+
+footer:hover {
+  opacity 0.5
 }
 .center-text{
   text-align:center;
