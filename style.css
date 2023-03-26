@@ -118,12 +118,7 @@ footer {
   background-image: var(--gradient2);
   animation: bg-animation 25s infinite;
   height: 3%;
-  opacity 0.2;
-  text-size: 12px;
-}
-
-footer:hover {
-  opacity 0.5
+  opacity: 0.2;
 }
 .center-text{
   text-align:center;
@@ -136,4 +131,24 @@ footer:hover {
 img {
   border-radius: 15px;
 }
+
+#inputchecker {
+  display: none; /* Hide the input */
+}
+
+#inputchecker:checked + label img.profile{
+  animation: spinning-circle 3s;
+}
+
+@-webkit-keyframes spinning-circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 
