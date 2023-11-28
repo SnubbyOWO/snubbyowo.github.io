@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="google-adsense-account" content="ca-pub-4095515773082549">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Snubtendo eShop</title>
     <link rel="shortcut icon" href="favicon.png">
@@ -13,11 +14,16 @@
 </head>
 <script>
     var audio = new Audio("snubslolz.wav");
+    var currentUrl = window.location.href;
 
     function clickedlol() {
         audio.play();
         document.getElementById("headerchange").textContent = "スナブテンドー・eShop"
         document.getElementById("maybechange").textContent = "おい！ 私はスナブです、またはあなたは私をスナブと呼ぶことができますが、私は開発者であり、私はコーディングするのが大好きです！ とにかく私は跳ね返らなければなりません！ ええ〜？ どうしたの？ なんてこった？ ええ、私はアニメの女の子として自分自身を置きました。なぜあなたは知らないのですか？ ちょっとかわいい〜";
+    }
+
+    if (currentUrl.includes('#playlist')) {
+        window.location.href = 'https://www.youtube.com/playlist?list=PLG7OcFB1253IU3SIWCMt8oADeIQhBDgr-';
     }
 </script>
 
