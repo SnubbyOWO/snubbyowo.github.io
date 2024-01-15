@@ -63,6 +63,10 @@ nav img.profile {
   border-radius: 50%;
 }
 
+nav ul h1 {
+  text-align: center;
+}
+
 .icons img {
   vertical-align: cen;
   flex-wrap: wrap;
@@ -71,12 +75,16 @@ nav img.profile {
   opacity: 0.5;
 }
 
+.icons img {
+  transition: transform 0.3s ease;
+}
+
 .icons img:hover {
-  animation: increasesize .2s forwards ease-in;
+  transform: scale(1.5);
 }
 
 .icons img:not(:hover) {
-  animation: decreasesize .2s forwards ease-in-out;
+  transform: scale(1);
 }
 
 @keyframes increasesize {
@@ -138,6 +146,18 @@ section img {
   margin-bottom: 10px;
 }
 
+section video {
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+section a {
+  color: #148c88;
+  text-decoration: none;
+  font-size: 25px;
+}
+
 section h3 {
   color: #fb9940;
   font-size: 1.2em;
@@ -160,10 +180,6 @@ footer {
   opacity: 0.2;
 }
 .center-text{
-  text-align:center;
-}
-
-#owned-games {
   text-align:center;
 }
 

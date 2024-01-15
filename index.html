@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <meta name="google-adsense-account" content="ca-pub-4095515773082549">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Snubtendo eShop</title>
     <link rel="shortcut icon" href="favicon.png">
@@ -25,6 +24,14 @@
     if (currentUrl.includes('#playlist')) {
         window.location.href = 'https://www.youtube.com/playlist?list=PLG7OcFB1253IU3SIWCMt8oADeIQhBDgr-';
     }
+
+    window.onload = function() {
+        var videos = ["https://startmyeducation.net/img/sponser.mp4", "https://startmyeducation.net/img/vids/HelloSnubby2.mp4", "https://startmyeducation.net/img/vids/So%20Shameless.mp4", "https://startmyeducation.net/img/vids/Sora%20Thanks%20Me.mp4", "https://startmyeducation.net/img/vids/Sora_Te_Amo_Mucho.mp4"];
+        var num = Math.floor(Math.random() * 5);
+        var videochanger = document.getElementById('sora');
+        videochanger.src = videos[num];
+    };
+
 </script>
 
 <body background="pictures/background.png">
@@ -38,7 +45,6 @@
                 <label for="inputchecker">
                   <img onclick="clickedlol();" src="pictures/snubs.png" class="profile">
                 </label>
-                <p>Snubby</p>
                 <a class="icons" onclick="alert('@snubby.jpg')">
                   <img src="pictures/discord.png" width="30" height="30" />
                 </a>
@@ -52,14 +58,10 @@
                     <img style="border-radius: 50%;" src="pictures/yt.png" width="30" height="30" />
                 </a>-->
             </li>
+            <h1>Snubby</h1>
             <li id="maybechange">Web Dev, and other stuff idk. Honestlty I do this because I just do and yeah. Also, don't take credit for shit I do. Its pathetic, just show credit its not that hard</li>
         </ul>
     </nav>
-    <section>
-        <!--<h2>Games Owned</h2>
-        <div id="owned-games">
-        </div>-->
-    </section>
     <section>
         <h2>Featured Projects</h2>
         <ul>
@@ -91,13 +93,9 @@
                 <img src="pictures/unity.png">
                 <div class="center-text">It is a light weight bloom so it doesn't look amazing but it gets the job done. Mainly used on Unity WebGL if you want great preformance for web games.<br><strong>[Still works on other platforms though]</strong><br><a style="color: rgb(141, 148, 253);" href="https://github.com/SnubbyOWO/SimpleBloom" target="_blank">Download The Shader!</a></div>
             </li>
-            <!--<li> Yes, im working on the forest :troll:
-            <img src="https://via.placeholder.com/100x100">
-            <div class="center-text">The Forest</div>
-        </li>-->
         </ul>
     </section>
-    <section id="noticed">
+    <!--<section id="noticed">
         <h2>Noticed By Vtubers</h2>
         <div class="video-grid">
             <div class="video-item">
@@ -129,25 +127,37 @@
                 <a href="https://www.twitch.tv/kitanya_is_here">kitanya_is_here</a>
             </div>
         </div>
+    </section>-->
+    <section>
+        <h2>Noticed By Vtubers</h2>
+        <ul>
+            <li>
+                <video id="sora" controls></video>
+                Randomized
+                <div class="center-text"><a href="https://www.youtube.com/@SoraVT.">Sora ASMR</a></div>
+            </li>
+            <li>
+                <video src="https://startmyeducation.net/img/sponser2.mp4" controls></video>
+                <div class="center-text"><a href="https://youtube.com/@BethyVA">BethyVA</a></div>
+            </li>
+            <li>
+                <video src="https://startmyeducation.net/img/sponser3.mp4" controls></video>
+                <div class="center-text"><a href="https://www.youtube.com/@anniepants">Anniepants</a></div>
+            </li>
+            <li>
+                <video src="https://startmyeducation.net/img/sponser4.mp4" controls></video>
+                <div class="center-text"><a href="https://www.youtube.com/@GXAuraOfficial">GxAura</a></div>
+            </li>
+            <li>
+                <video src="https://startmyeducation.net/img/IRONMOUSE.mp4" controls></video>
+                <div class="center-text"><a href="https://www.youtube.com/@ironmouseparty">Ironmouse</a></div>
+            </li>
+            <li>
+                <video src="https://startmyeducation.net/img/vids/Snubby%20and%20Koji.mp4" controls></video>
+                <div class="center-text"><a href="https://www.twitch.tv/kitanya_is_here">kitanya_is_here</a></div>
+            </li>
+        </ul>
     </section>
-    <!--<footer>
-      <p>Copyright These Nuts In Yo Mouth</p>
-
-      <a href="pictures/discordac.png" target="_blank">
-        <img src="pictures/discord.png" width="25" height="25"/>
-      </a>
-      
-      <a href="https://github.com/SnubbyOWO" target="_blank">
-          <img src="pictures/git.png" width="25" height="25"/>
-      </a>
-
-      <a href="https://steamcommunity.com/id/SnubbyOWO/" target="_blank">
-        <img src="pictures/steam.png" width="25" height="25"/>
-      </a>
-      <a href="https://www.youtube.com/channel/UCsQaoCoX7b74mOlkpHB6elw" target="_blank">
-        <img style="border-radius: 50%;" src="pictures/yt.png" width="25" height="25"/>
-      </a>
-    </footer>-->
 </body>
 
 </html>
