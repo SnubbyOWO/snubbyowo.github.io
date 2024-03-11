@@ -1,24 +1,15 @@
--NEW-
+--- NEW ---
+# Version 2.0
+- Working on new shaders to correctly match original slime rancher
+- Fixed some coliders
+- Sorted files
+- Removed Herobrine
+
+--- OLD ---
+# Version 1.5
 - Added Debug functions
 - Reduced Mesh Coliders
 - Increased brightness
 - Fixed Resizing
 - Added Memory Usage Count and Object Count
--OLD-
-- Hunter Slimes are re-added to the beta.
-- Sky is fixed-ish.
-- Fixed some colors of slimes.
-- Changed beta icons (Shop, Plorts, Upgrades)
-- Fixed FPS counter.
-- Added a Updates Page (duh)
-- Lowered Render Distance.
-- Added BETA Quarry Zone.
-- Fixed no ears on Hunter Slime.
-- Fixed Earless Boom Slime
-- Added Custom Slime
-(very rare 0.005 chance)
-- Lowered Slime Spawn limit
-- Added Mods
-- Fixed Controls
-- Added Gold Statue (3)
-- Fixed Scripts
+
