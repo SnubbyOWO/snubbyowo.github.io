@@ -13,3 +13,8 @@
 - Fixed Resizing
 - Added Memory Usage Count and Object Count
 
+--- KNOWN ISSUES ---
+- Game lags when loading new regions
+- Box crate texture broken
+- Vac isnt properly texture
+  etc...
