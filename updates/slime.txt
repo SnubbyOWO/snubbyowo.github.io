@@ -1,17 +1,21 @@
 --- NEW ---
-# Version 2.0
-- Working on new shaders to correctly match original slime rancher
-- Fixed some coliders
-- Sorted files
+# Version 2.1
+- Fixed dull textures (work in progress)
+- Fixed update manager not working properly
+- Reduced bloom
+- New Vac Shader Test (work in progress)
 - Removed Herobrine
 
 --- OLD ---
-# Version 1.5
+# Version 1.5 / 2.0
 - Added Debug functions
 - Reduced Mesh Coliders
 - Increased brightness
 - Fixed Resizing
 - Added Memory Usage Count and Object Count
+- Working on new shaders to correctly match original slime rancher
+- Fixed some coliders
+- Sorted files
 
 --- KNOWN ISSUES ---
 - Game lags when loading new regions
