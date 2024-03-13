@@ -1,23 +1,22 @@
 --- NEW ---
-# Version 2.1
+# Version 2.2
+- Improving UI to be like updated versions
+- Added Version Number
 - Fixed dull textures (work in progress)
-- Fixed update manager not working properly
 - Reduced bloom
 - New Vac Shader Test (work in progress)
 - Removed Herobrine
 
 --- OLD ---
-# Version 1.5 / 2.0
-- Added Debug functions
+# Version 2.0 / 2.1
 - Reduced Mesh Coliders
-- Increased brightness
-- Fixed Resizing
-- Added Memory Usage Count and Object Count
 - Working on new shaders to correctly match original slime rancher
 - Fixed some coliders
 - Sorted files
+- Fixed update manager not working properly
 
 --- KNOWN ISSUES ---
+- Do NOT fall off the map
 - Game lags when loading new regions
 - Box crate texture broken
 - Vac isnt properly texture
