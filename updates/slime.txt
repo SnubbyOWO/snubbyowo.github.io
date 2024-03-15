@@ -1,14 +1,17 @@
 --- NEW ---
-# Version 2.2
+# Version 2.3
+- Added "Cheats" option instead of debug
+- Adding Exporting/Importing system
+- More modern GUI's
+- Removed Herobrine
+
+--- OLD ---
+# Version 2.0 / 2.1 / 2.2
 - Improving UI to be like updated versions
 - Added Version Number
 - Fixed dull textures (work in progress)
 - Reduced bloom
 - New Vac Shader Test (work in progress)
-- Removed Herobrine
-
---- OLD ---
-# Version 2.0 / 2.1
 - Reduced Mesh Coliders
 - Working on new shaders to correctly match original slime rancher
 - Fixed some coliders
