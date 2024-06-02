@@ -296,6 +296,10 @@ header nav {
   #project-container {
     flex-direction: column-reverse;
   }
+  
+  body {
+    zoom: 0.8;
+  }
 }
 
 .fade-out {
