@@ -1,16 +1,108 @@
-:root {
-  --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
-  --gradient2: linear-gradient(90deg, #ff7b00, #aa6524, #fb9940);
-}
-
-@font-face {
-  font-family: AOTFShinGoProRegular;
-  src: url(font/AOTFShinGoProRegular.otf);
-}
-
 body {
   font-family: AOTFShinGoProRegular;
   color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #121212;
+  margin: 0;
+  background-image: url('img/background.gif');
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+header img.profile {
+  width: 150px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  filter: saturate(150%) drop-shadow(0px 0px 2rem);
+  transition: transform 0.3s ease;
+}
+
+header img.profile:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: linear-gradient(#444, #222);
+  animation: bg-animation 25s infinite;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+section {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+section h2 {
+  color: #ff6f61;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section li {
+  width: 45%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section video {
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+footer {
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  width: 99%;
+  opacity: 0.8;
+  background-image: linear-gradient(#202020, #0f0f0f);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+footer .icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .icons img {
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer .icons img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+
+img {
+  border-radius: 15px;
 }
 
 @keyframes bg-animation {
@@ -19,72 +111,9 @@ body {
   100% {background-position: left}
 }
 
-
-header {
-  text-align: center;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.profile {
-  width: 150px;
-  margin-bottom: 10px;
-}
-
-nav {
-  border-radius: 15px;
-  background-color: #fb9940;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background-image: var(--gradient2);
-  animation: bg-animation 25s infinite;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-nav li {
-  padding: 10px;
-  font-size: 18px;
-}
-
-nav img.profile {
-  width: 100px;
-  margin-right: 10px;
-  text-align: bottom;
-  border-radius: 50%;
-}
-
-nav ul h1 {
-  text-align: center;
-}
-
-.icons img {
-  vertical-align: cen;
-  flex-wrap: wrap;
-  display: flex;
-  text-align: center;
-  opacity: 0.5;
-}
-
-.icons img {
-  transition: transform 0.3s ease;
-}
-
-.icons img:hover {
-  transform: scale(1.5);
-}
-
-.icons img:not(:hover) {
-  transform: scale(1);
+@font-face {
+  font-family: AOTFShinGoProRegular;
+  src: url(font/AOTFShinGoProRegular.otf);
 }
 
 @keyframes increasesize {
@@ -108,91 +137,10 @@ nav ul h1 {
   }
 }
 
-
-section {
-  margin: 0 auto;
-  width: 80%;
-}
-
-section h2 {
-  text-align: center;
-  color: #fb9940;
-  font-size: 1.5em;
-}
-
-section ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-section li {
-  width: 30%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 @media (max-width: 600px) {
   section li {
     width: 100%;
   }
-}
-
-section img {
-  width: 50%;
-  margin-bottom: 10px;
-}
-
-section video {
-  width: 80%;
-  margin-bottom: 10px;
-  border-radius: 15px;
-}
-
-section a {
-  color: #148c88;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-section h3 {
-  color: #fb9940;
-  font-size: 1.2em;
-  margin-top: 10px;
-}
-
-footer {
-  border-radius: 15px;
-  z-index: 8;
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  background-color: #fb9940;
-  color: white;
-  padding: 20px 0;
-  width: 99%;
-  background-image: var(--gradient2);
-  animation: bg-animation 25s infinite;
-  height: 3%;
-  opacity: 0.2;
-}
-.center-text{
-  text-align:center;
-}
-
-img {
-  border-radius: 15px;
-}
-
-#inputchecker {
-  display: none; /* Hide the input */
-}
-
-#inputchecker:checked + label img.profile{
-  animation: spinning-circle 3s;
 }
 
 @-webkit-keyframes spinning-circle {
@@ -204,6 +152,63 @@ img {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+@media (max-width: 600px) {
+  .video-item {
+    width: 90%;
+  }
+}
+
+/* All Classes and Ids */
+
+.profile {
+  width: 150px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.icons {
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.icons img {
+  vertical-align: center;
+  display: flex;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.icons img {
+  transition: transform 0.3s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.5);
+}
+
+.icons img:not(:hover) {
+  transform: scale(1);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-text a {
+  color: #87CEEB;
+}
+
+#inputchecker {
+  display: none; /* Hide the input */
+}
+
+#inputchecker:checked + label img.profile {
+  animation: spinning-circle 3s;
 }
 
 /* NEW VIDEO CODE SHIT DUDE I NEED TO FIX ALL THIS MESSY STUFF */
@@ -249,13 +254,105 @@ img {
   font-size: 25px;
 }
 
-.video-item a:hover {
+video-item a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  .video-item {
-    width: 90%;
+header nav {
+  flex-direction: column;
+}
+
+/* BOOT SCREEN THING BECAUSE I THINK IT WOULD LOOK COOL ALSO why do I type in all caps */
+
+#boot-screen {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  font-size: 1.2em;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#boot-screen-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  filter: saturate(150%) drop-shadow(0px 0px 2rem);
+}
+
+@media only screen and (max-width: 700px) {
+  #boot-screen-text {
+    font-size: 0.7em;
   }
 }
 
+.fade-out {
+  transition: opacity 2s ease-out;
+  opacity: 0;
+}
+
+/* New Project Page */
+
+#project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  filter: drop-shadow(0px 0px 2rem);
+}
+
+#project-image {
+  width: 60%;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 15px;
+}
+
+#project-description {
+  margin-top: 10px;
+  color: #ccc;
+  transition: opacity 0.5s ease-in-out;
+  text-align: center;
+}
+
+#project-description nav a {
+  color: #87CEEB;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#project-description nav a:hover {
+  color: #ff6f61;
+}
+
+#project-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  transition: transform 0.3s ease;
+}
+
+#project-container button:hover {
+  transform: scale(1.1);
+}
+
+#prev svg, #next svg {
+  width: 40px;
+  height: 40px;
+  fill: #87CEEB;
+}
+
+@keyframes bg-animation {
+  0% {background-position: left}
+  50% {background-position: right}
+  100% {background-position: left}
+}

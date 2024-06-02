@@ -3,161 +3,154 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Snubtendo eShop</title>
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="snubby.jpg, snubby, snubs, slime rancher, slime, web, html5, rancher, chromebook, slimerancher, games, unity, fnaf, FNAF, fnaffree, free, game">
     <meta property="og:title" content="< Snubby >">
+    <meta property="og:image" content="https://snubby.top/img/snubs.png">
     <meta name="description" content="All of my projects/works over time!">
     <meta name="og:description" content="All of my projects/works over time!">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/Load.js"></script> <!--This has like the random stuff for example the #playlist-->
+    <script src="js/Boot.js"></script> <!--This is the boot thing (SnubOS)-->
+    <script src="js/Projects.js"></script> <!--This handles the projects-->
 </head>
-<script>
-    var audio = new Audio("snubslolz.wav");
-    var currentUrl = window.location.href;
 
-    function clickedlol() {
-        audio.play();
-        document.getElementById("headerchange").textContent = "スナブテンドー・eShop"
-        document.getElementById("maybechange").textContent = "おい！ 私はスナブです、またはあなたは私をスナブと呼ぶことができますが、私は開発者であり、私はコーディングするのが大好きです！ とにかく私は跳ね返らなければなりません！ ええ〜？ どうしたの？ なんてこった？ ええ、私はアニメの女の子として自分自身を置きました。なぜあなたは知らないのですか？ ちょっとかわいい〜";
-    }
-
-    if (currentUrl.includes('#playlist')) {
-        window.location.href = 'https://www.youtube.com/playlist?list=PLG7OcFB1253IU3SIWCMt8oADeIQhBDgr-';
-    }
-
-    window.onload = function() {
-        var videos = ["https://startmyeducation.net/img/sponser.mp4", "https://startmyeducation.net/img/vids/HelloSnubby2.mp4", "https://startmyeducation.net/img/vids/So%20Shameless.mp4", "https://startmyeducation.net/img/vids/Sora%20Thanks%20Me.mp4", "https://startmyeducation.net/img/vids/Sora_Te_Amo_Mucho.mp4"];
-        var num = Math.floor(Math.random() * 5);
-        var videochanger = document.getElementById('sora');
-        videochanger.src = videos[num];
-    };
-
-</script>
-
-<body background="pictures/background.png">
+<body>
+    <div id="boot-screen">
+        <!--Boot screen thing-->
+        <div id="boot-screen-text"></div>
+    </div>
+    <!--Kinda like a welcoming thing or sm-->
     <header>
-        <h1 id="headerchange">Snubtendo eShop</h1>
-    </header>
-    <nav>
-        <ul>
-            <li>
-              <input type="checkbox" id="inputchecker">
+        <h1 id="headerchange">SnubOS</h1>
+        <input type="checkbox" id="inputchecker">
                 <label for="inputchecker">
-                  <img onclick="clickedlol();" src="pictures/snubs.png" class="profile">
+                  <img onclick="clickedlol();" src="img/snubs.png" class="profile">
                 </label>
-                <a class="icons" onclick="alert('@snubby.jpg')">
-                  <img src="pictures/discord.png" width="30" height="30" />
-                </a>
-                <a class="icons" href="https://github.com/SnubbyOWO" target="_blank">
-                    <img src="pictures/git.png" width="30" height="30" />
-                </a>
-                <a class="icons" href="https://steamcommunity.com/id/SnubbyOWO/" target="_blank">
-                    <img src="pictures/steam.png" width="30" height="30" />
-                </a>
-                <!--<a class="icons" href="https://www.youtube.com/channel/UCsQaoCoX7b74mOlkpHB6elw" target="_blank">
-                    <img style="border-radius: 50%;" src="pictures/yt.png" width="30" height="30" />
-                </a>-->
-            </li>
-            <h1>Snubby</h1>
-            <li id="maybechange">Web Dev, and other stuff idk. Honestlty I do this because I just do and yeah. Also, don't take credit for shit I do. Its pathetic, just show credit its not that hard</li>
-        </ul>
-    </nav>
+        </input>
+        <nav>
+            <p id="maybechange">Hey, I'm Snubby, a programmer that does mainly web development and other stuff. I do this because I just do and yeah. Also, don't take credit. Just show credit its not that hard.</p>
+            
+            <!--To show like what random message they got in the bios-->
+            <p id="random-message-display"></p>
+        </nav>
+    </header>
+
     <section>
         <h2>Featured Projects</h2>
-        <ul>
-            <li>
-                <img src="pictures/slime.PNG">
-                <div class="center-text">Slime Rancher v0.2.1 WebGL Works on web! Come <br><a style="color: rgb(141, 148, 253);" href="https://dev.snubby.top/" target="_blank">Try it!</a> and check out the archive <a style="color: rgb(141, 148, 253);" href="https://dev.snubby.top/archive/" target="_blank">here!</a></div>
-            </li>
-            <li>
-                <img src="pictures/Switch.jpeg">
-                <div class="center-text">Recreated a Nintendo Switch layout in HTML and has playable games.</div>
-            </li>
-            <li>
-                <img src="pictures/funni.PNG">
-                <div class="center-text">Remade a discord "virus" GIF that is a anime loli girl asking for your credit card.</div>
-            </li>
-            <li>
-                <img src="pictures/fnaf.png">
-                <div class="center-text">A working game of FNAF on the browser! Come <br><a style="color: rgb(141, 148, 253);" href="https://dev.snubby.top/fnaf" target="_blank">Try it!</a></div>
-            </li>
-            <li>
-                <img src="pictures/ai.jpeg">
-                <div class="center-text">A AI using JavaScript! Come <br><a style="color: rgb(141, 148, 253);" href="https://snubbyowo.github.io/ai-using-javascript/" target="_blank">Try it </a>or <a style="color: rgb(141, 148, 253);" href="https://github.com/SnubbyOWO/ai-using-javascript" target="_blank">Download The Template!</a></div>
-            </li>
-            <li>
-                <img src="pictures/discordbot.png">
-                <div class="center-text">Ai-Chan is a Discord bot that offers gets the active users input and uses Voicevox API to create a TTS audio clip! <a style="color: rgb(141, 148, 253);" href="https://github.com/SnubbyOWO/Ai-Chan-bot" target="_blank">Download The Bot!</a></div>
-            </li>
-            <li>
-                <img src="pictures/unity.png">
-                <div class="center-text">It is a light weight bloom so it doesn't look amazing but it gets the job done. Mainly used on Unity WebGL if you want great preformance for web games.<br><strong>[Still works on other platforms though]</strong><br><a style="color: rgb(141, 148, 253);" href="https://github.com/SnubbyOWO/SimpleBloom" target="_blank">Download The Shader!</a></div>
-            </li>
-        </ul>
-    </section>
-    <!--<section id="noticed">
-        <h2>Noticed By Vtubers</h2>
-        <div class="video-grid">
-            <div class="video-item">
-                <video src="https://startmyeducation.net/img/sponser.mp4" controls></video>
-                <video src="https://startmyeducation.net/img/vids/HelloSnubby2.mp4" controls></video>
-                <video src="https://startmyeducation.net/img/vids/So%20Shameless.mp4" controls></video>
-                <video src="https://startmyeducation.net/img/vids/Sora%20Thanks%20Me.mp4" controls></video>
-                <video src="https://startmyeducation.net/img/vids/Sora_Te_Amo_Mucho.mp4" controls></video>
-                <a href="https://www.youtube.com/@SoraVT.">Sora ASMR</a>
+        <div id="project-container">
+            <button id="prev">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.58 45.58" xml:space="preserve">
+                    <g>
+                        <path d="M45.506,33.532c-1.741-7.42-7.161-17.758-23.554-19.942V7.047c0-1.364-0.826-2.593-2.087-3.113
+                            c-1.261-0.521-2.712-0.229-3.675,0.737L1.305,19.63c-1.739,1.748-1.74,4.572-0.001,6.32L16.19,40.909
+                            c0.961,0.966,2.415,1.258,3.676,0.737c1.261-0.521,2.087-1.75,2.087-3.113v-6.331c5.593,0.007,13.656,0.743,19.392,4.313
+                            c0.953,0.594,2.168,0.555,3.08-0.101C45.335,35.762,45.763,34.624,45.506,33.532z"/>
+                    </g>
+                </svg>
+            </button>
+            <img id="project-image" src="img/slime.PNG">
+            <div id="project-description">
+                <nav>
+                    <p>Slime Rancher v0.2.1 WebGL Works on web! Come <a style="color: rgb(141, 148, 253);" href="https://dev.snubby.top/" target="_blank">Try it!</a> and check out the archive <a style="color: rgb(141, 148, 253);" href="https://dev.snubby.top/archive/" target="_blank">here!</a></p>
+                </nav>
             </div>
-            <div class="video-item">
-                <video src="https://startmyeducation.net/img/sponser2.mp4" controls></video>
-                <a href="https://youtube.com/@BethyVA">BethyVA</a>
-            </div>
-            <div class="video-item">
-                <video src="https://startmyeducation.net/img/sponser3.mp4" controls></video>
-                <a href="https://www.youtube.com/@anniepants">Anniepants</a>
-            </div>
-            <div class="video-item">
-                <video src="https://startmyeducation.net/img/sponser4.mp4" controls></video>
-                <a href="https://www.youtube.com/@GXAuraOfficial">GxAura</a>
-            </div>
-            <div class="video-item">
-                <video src="https://startmyeducation.net/img/IRONMOUSE.mp4" controls></video>
-                <a href="https://www.youtube.com/@ironmouseparty">Ironmouse</a>
-            </div>
-            <div class="video-item">
-                <video src="https://startmyeducation.net/img/vids/Snubby%20and%20Koji.mp4" controls></video>
-                <a href="https://www.twitch.tv/kitanya_is_here">kitanya_is_here</a>
-            </div>
+            <button id="next">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.58 45.58" xml:space="preserve" transform="scale(-1, 1)">
+                    <g>
+                        <path d="M45.506,33.532c-1.741-7.42-7.161-17.758-23.554-19.942V7.047c0-1.364-0.826-2.593-2.087-3.113
+                            c-1.261-0.521-2.712-0.229-3.675,0.737L1.305,19.63c-1.739,1.748-1.74,4.572-0.001,6.32L16.19,40.909
+                            c0.961,0.966,2.415,1.258,3.676,0.737c1.261-0.521,2.087-1.75,2.087-3.113v-6.331c5.593,0.007,13.656,0.743,19.392,4.313
+                            c0.953,0.594,2.168,0.555,3.08-0.101C45.335,35.762,45.763,34.624,45.506,33.532z"/>
+                    </g>
+                </svg>
+            </button>
         </div>
-    </section>-->
+    </section>
     <section>
         <h2>Noticed By Vtubers</h2>
         <ul>
             <li>
-                <video id="sora" controls></video>
-                Randomized
+                <video id="sora" src="" controls></video>
+                <p>Randomized</p>
                 <div class="center-text"><a href="https://www.youtube.com/@SoraVT.">Sora ASMR</a></div>
             </li>
             <li>
-                <video src="https://startmyeducation.net/img/sponser2.mp4" controls></video>
+                <video src="vids/BethyVA.mp4" controls></video>
                 <div class="center-text"><a href="https://youtube.com/@BethyVA">BethyVA</a></div>
             </li>
             <li>
-                <video src="https://startmyeducation.net/img/sponser3.mp4" controls></video>
+                <video src="vids/Anniepants.mp4" controls></video>
                 <div class="center-text"><a href="https://www.youtube.com/@anniepants">Anniepants</a></div>
             </li>
             <li>
-                <video src="https://startmyeducation.net/img/sponser4.mp4" controls></video>
+                <video src="vids/GxAura.mp4" controls></video>
                 <div class="center-text"><a href="https://www.youtube.com/@GXAuraOfficial">GxAura</a></div>
             </li>
             <li>
-                <video src="https://startmyeducation.net/img/IRONMOUSE.mp4" controls></video>
+                <video src="vids/Ironmouse.mp4" controls></video>
                 <div class="center-text"><a href="https://www.youtube.com/@ironmouseparty">Ironmouse</a></div>
             </li>
             <li>
-                <video src="https://startmyeducation.net/img/vids/Snubby%20and%20Koji.mp4" controls></video>
+                <video src="vids/Kitanya_is_here.mp4" controls></video>
                 <div class="center-text"><a href="https://www.twitch.tv/kitanya_is_here">kitanya_is_here</a></div>
             </li>
+            <li>
+                <video src="vids/Cweamcat.mp4" controls></video>
+                <div class="center-text"><a href="https://www.twitch.tv/Cweamcat">Cweamcat</a></div>
+            </li>
+            <li>
+                <video src="vids/Foxy.mp4" controls></video>
+                <div class="center-text"><a href="https://www.twitch.tv/foxplushy">Foxplushy</a></div>
+            </li>
+            <li>
+                <video src="vids/Araagomi.mp4" controls></video>
+                <div class="center-text"><a href="https://www.twitch.tv/Araagomi">Araagomi</a></div>
+            </li>
+            <li>
+                <video src="vids/Inksie.mp4" controls></video>
+                <div class="center-text"><a href="https://www.twitch.tv/inksie">Inksie</a></div>
+            </li>
+            <li>
+                <video src="vids/Kaimeriss.mp4" controls></video>
+                <div class="center-text"><a href="https://www.twitch.tv/kaimeriss">Kaimeriss</a></div>
+            </li>  
+            <li>
+                <video src="vids/ShinASMR.mp4" controls></video>
+                <div class="center-text"><a href="https://www.twitch.tv/shinasmr">ShinASMR</a></div>
+            </li>  
+            <li>
+                <video src="vids/Darlingstrawb.mp4" controls></video>
+                <div class="center-text"><a href="https://www.twitch.tv/darlingstrawb">Darlingstrawb</a></div>
+            </li>  
         </ul>
+        <p>this is for fun and jokes (please believe me)</p>
     </section>
+
+    <!--All my info will be here-->
+    <footer>
+        <p>You can find me here,</p>
+        <div class="icon-container">
+            <a class="icons" href="https://discord.com/users/558453792593412127/" target="_blank">
+                <img src="img/discord.png" width="30" height="30"/>
+            </a>
+            <a class="icons" href="https://github.com/SnubbyOWO" target="_blank">
+                <img src="img/git.png" width="30" height="30"/>
+            </a>
+            <a class="icons" href="https://steamcommunity.com/id/Snubbyjpg/" target="_blank">
+                <img src="img/steam.png" width="30" height="30"/>
+            </a>
+            <a class="icons" href="https://ko-fi.com/snubdev" target="_blank">
+                <img src="img/kofi_button_blue.png" width="30" height="30">
+            </a>
+        </div>
+        <!--To lazy to put a other like css property so i just put a mini style edit here-->
+        <a style="color:white;" href="mailto:help@snubby.top">Send A Email!<br>[help@snubby.top]</a>
+        <br><br><br><br><br><br><br><br><br><br><br><br> <!--bruh-->
+        <img src="img/SoraASMR_Snubby_Emote.png" width="100" height="100">
+        <p>Thank you Sora for this amazing emote.</p>
+    </footer>
 </body>
 
 </html>
