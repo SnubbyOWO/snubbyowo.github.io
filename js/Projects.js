@@ -7,7 +7,7 @@ const projects = [
     },
     {
         img: 'img/DDLC.png',
-        desc: 'Doki Doki Literature Club Web Version Come <br><a style="color: rgb(141, 148, 253);" href="https://dev.snubby.top/ddlc" target="_blank">Try it!</a> and check out the archive <a style="color: rgb(141, 148, 253);" href="https://dev.snubby.top/archive/" target="_blank">here!</a> Source Code <a style="color: rgb(141, 148, 253);" href="https://github.com/SecondThundeR/DokiDoki-RenPy" target="_blank">here!</a>'
+        desc: 'Doki Doki Literature Club Web Version Come <br><a style="color: rgb(141, 148, 253);" href="https://dev.snubby.top/ddlc" target="_blank">Try it!</a> Source Code <a style="color: rgb(141, 148, 253);" href="https://github.com/SecondThundeR/DokiDoki-RenPy" target="_blank">here!</a>'
     },
     {
         img: 'img/Switch.jpeg',
