@@ -1,0 +1,10 @@
+{
+    "SLENDER_SLIME": 
+    {
+        "_comment": "The mods will be added but will put the text in lowercase most likely this is just a test for now",
+        "mod_name": "SLENDER_SLIME",
+        "ui_name": "Slender Slime",
+        "mod_desc": "It does nothing, it is to test out the mod system.",
+        "mod_img": "https://snubby.top/img/snubs.png"
+    }
+}
