@@ -72,56 +72,56 @@
         <h2>Noticed By Vtubers</h2>
         <ul>
             <li>
-                <video id="sora" src="" controls></video>
+                <video id="sora" data-src="" controls></video>
                 <p>Randomized</p>
                 <div class="center-text"><a href="https://www.youtube.com/@SoraVT.">Sora ASMR</a></div>
             </li>
             <li>
-                <video src="vids/BethyVA.mp4" controls></video>
+                <video data-src="vids/BethyVA.mp4" controls></video>
                 <div class="center-text"><a href="https://youtube.com/@BethyVA">BethyVA</a></div>
             </li>
             <li>
-                <video src="vids/Anniepants.mp4" controls></video>
+                <video data-src="vids/Anniepants.mp4" controls></video>
                 <div class="center-text"><a href="https://www.youtube.com/@anniepants">Anniepants</a></div>
             </li>
             <li>
-                <video src="vids/GxAura.mp4" controls></video>
+                <video data-src="vids/GxAura.mp4" controls></video>
                 <div class="center-text"><a href="https://www.youtube.com/@GXAuraOfficial">GxAura</a></div>
             </li>
             <li>
-                <video src="vids/Ironmouse.mp4" controls></video>
+                <video data-src="vids/Ironmouse.mp4" controls></video>
                 <div class="center-text"><a href="https://www.youtube.com/@ironmouseparty">Ironmouse</a></div>
             </li>
             <li>
-                <video src="vids/Kitanya_is_here.mp4" controls></video>
+                <video data-src="vids/Kitanya_is_here.mp4" controls></video>
                 <div class="center-text"><a href="https://www.twitch.tv/kitanya_is_here">kitanya_is_here</a></div>
             </li>
             <li>
-                <video src="vids/Cweamcat.mp4" controls></video>
+                <video data-src="vids/Cweamcat.mp4" controls></video>
                 <div class="center-text"><a href="https://www.twitch.tv/Cweamcat">Cweamcat</a></div>
             </li>
             <li>
-                <video src="vids/Foxy.mp4" controls></video>
+                <video data-src="vids/Foxy.mp4" controls></video>
                 <div class="center-text"><a href="https://www.twitch.tv/foxplushy">Foxplushy</a></div>
             </li>
             <li>
-                <video src="vids/Araagomi.mp4" controls></video>
+                <video data-src="vids/Araagomi.mp4" controls></video>
                 <div class="center-text"><a href="https://www.twitch.tv/Araagomi">Araagomi</a></div>
             </li>
             <li>
-                <video src="vids/Inksie.mp4" controls></video>
+                <video data-src="vids/Inksie.mp4" controls></video>
                 <div class="center-text"><a href="https://www.twitch.tv/inksie">Inksie</a></div>
             </li>
             <li>
-                <video src="vids/Kaimeriss.mp4" controls></video>
+                <video data-src="vids/Kaimeriss.mp4" controls></video>
                 <div class="center-text"><a href="https://www.twitch.tv/kaimeriss">Kaimeriss</a></div>
             </li>  
             <li>
-                <video src="vids/ShinASMR.mp4" controls></video>
+                <video data-src="vids/ShinASMR.mp4" controls></video>
                 <div class="center-text"><a href="https://www.twitch.tv/shinasmr">ShinASMR</a></div>
             </li>  
             <li>
-                <video src="vids/Darlingstrawb.mp4" controls></video>
+                <video data-src="vids/Darlingstrawb.mp4" controls></video>
                 <div class="center-text"><a href="https://www.twitch.tv/darlingstrawb">Darlingstrawb</a></div>
             </li>  
         </ul>
@@ -151,6 +151,30 @@
         <img src="img/SoraASMR_Snubby_Emote.png" width="100" height="100">
         <p>Thank you Sora for this amazing emote.</p>
     </footer>
+    <script>
+        // quick add for like lazy loading shit
+        document.addEventListener("DOMContentLoaded", function() {
+            const videos = document.querySelectorAll("video[data-src]");
+            
+            const load = (video) => {
+                if (video.getAttribute("data-src")) {
+                    video.src = video.getAttribute("data-src");
+                    video.removeAttribute("data-src");
+                }
+            };
+    
+            const scroll = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        load(entry.target);
+                        scroll.unobserve(entry.target);
+                    }
+                });
+            });
+    
+            videos.forEach(video => scroll.observe(video));
+        });
+    </script>
 </body>
 
 </html>
