@@ -109,7 +109,7 @@ xX$&&&&&&&&&&&&&&&&&&$Xx$&&&&&&&&&&&$&&&&&&&&
 
     const messages = [
         `Last Login: ${date} from XXX.XXX.XXX.XXX\n\n` + ResultOSart + `\n${Math.round(randomNumber)} updates can be applied. But SnubOS hates updates ;)\n`,
-        'SnubsBIOS 1.0 Release 1.0.0',
+        'SnubsBIOS 1.0 Release 1.0.1',
         'Copyright (c) 2024 Snubby.jpg',
         'All Rights Reserved\n', // adding a other /n to make it have a double space
         'CPU: SnubsCore 1.0',
