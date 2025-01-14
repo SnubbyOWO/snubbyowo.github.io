@@ -34,6 +34,8 @@ function clickedlol() {
 
 if (currentUrl.includes('#playlist')) {
     window.location.href = 'https://www.youtube.com/playlist?list=PLG7OcFB1253IU3SIWCMt8oADeIQhBDgr-';
+} else if (currentUrl.includes('#vtubers')) {
+    document.getElementById("vtuber-stuff").style.display = "block";
 }
 
 document.addEventListener('DOMContentLoaded', function () {
