@@ -59,7 +59,10 @@ xX$&&&&&&&&&&&&&&&&&&$Xx$&&&&&&&&&&&$&&&&&&&&
         'Insert cash or select payment type',
         'Watch aidenisalright on twitch!',
         'What if instead of snubby.jpg it was snubby-freaky.jpg',
-        'Rain is so sigma...'
+        'Rain is so sigma...',
+        '_vertexg707 is so cool',
+        'https://startmyeducation.net/',
+        'aden anderson'
     ];
     const randomIndex = Math.floor(Math.random() * randomboot.length);
     const randomNumber = Math.random() * 100;
