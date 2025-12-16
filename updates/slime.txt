@@ -2,7 +2,7 @@
 # Version 2.7 (visit dev.snubby.top for latest release!)
 - Notice if on 3rd Party Site
 - Custom Load Distance
-- Fix verision number (2.6 was skipped)
+- Fix version number (2.6 was skipped)
 - etc
 
 --- OLD ---
