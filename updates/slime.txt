@@ -1,10 +1,14 @@
 --- NEW ---
-# Version 2.5
-- Fixed more textures
-- Increased shader preformance
+# Version 2.7
+- Notice if on 3rd Party Site
+- Custom Load Distance
+- Fix verision number (2.6 was skipped)
+- etc
 
 --- OLD ---
-# Version 2.1 / 2.2 / 2.3 / 2.4
+# Version 2.1 / 2.2 / 2.3 / 2.4 / 2.5/6
+- Fixed more textures
+- Increased shader preformance
 - BRAND NEW REWORK OF SLIME TEXTURES
 - Increased load zones
 - Added "Cheats" option instead of debug
@@ -12,13 +16,8 @@
 - More modern GUI's
 - Improving UI to be like updated versions
 - Added Version Number
-- Fixed dull textures (work in progress)
 - Reduced bloom
-- New Vac Shader Test (work in progress)
 
 --- KNOWN ISSUES ---
-- Do NOT fall off the map
 - Game lags when loading new regions
-- Box crate texture broken
-- Vac isnt properly texture
   etc...
