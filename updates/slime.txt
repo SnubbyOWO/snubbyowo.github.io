@@ -1,10 +1,17 @@
 --- NEW ---
-# Version 2.8 (visit dev.snubby.top for latest release!)
-- Custom Load Distance increase (max 10 chunks)
-- Fix export/import system (re-export your saves!)
+# Version 2.9
+- Capture Gameplay
+- Fix Slimes Despawning..?
+- New Zones Now Require a Key For Slime Doors
+- Auto Save Indicator
+- Loading Screen Icon Bouncy
+- Terraformed some places
+- Added Rad Gordo Slime
 
 --- OLD ---
-# Version 2.1 / 2.2 / 2.3 / 2.4 / 2.5/6 / 2.7
+# Version 2.1 / 2.2 / 2.3 / 2.4 / 2.5/6 / 2.7 / 2.8
+- Custom Load Distance increase (max 10 chunks)
+- Fix export/import system (re-export your saves!)
 - Notice if on 3rd Party Site
 - Custom Load Distance
 - Fix version number (2.6 was skipped)
@@ -18,7 +25,3 @@
 - Improving UI to be like updated versions
 - Added Version Number
 - Reduced bloom
-
---- KNOWN ISSUES ---
-- Game lags when loading new regions
-  etc...
