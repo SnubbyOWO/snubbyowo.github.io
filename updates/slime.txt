@@ -1,5 +1,8 @@
 --- NEW ---
-# Version 2.9
+# Version 2.9 patch 1
+- Objects toggle onto the vac like modern versions of slime rancher
+- Update barrier texture
+- Added button to plort collector
 - Capture Gameplay
 - Fix Slimes Despawning..?
 - New Zones Now Require a Key For Slime Doors
