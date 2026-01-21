@@ -1,5 +1,16 @@
 --- NEW ---
-# Version 2.9 patch 1
+# Version 3.0! Optimization Update!
+- Made vacuuming smoother by reducing background load while it runs
+- Reduced lag spikes from slimes spawning and despawning
+- Cut down some background work that was running every frame (cmon snubs?!?!)
+- Improved how lighting updates happen
+- Reduced tiny “hiccups” from lots of small background checks
+- Lowered loading time for chunks
+- Low/Lowest quality now fully turns off heavy visual effects
+- Low/Lowest now uses lighter shadows and shorter view distance for better FPS
+
+--- OLD ---
+# Version 2.3 / 2.4 / 2.5/6 / 2.7 / 2.8 /2.9
 - Objects toggle onto the vac like modern versions of slime rancher
 - Update barrier texture
 - Added button to plort collector
@@ -10,21 +21,6 @@
 - Loading Screen Icon Bouncy
 - Terraformed some places
 - Added Rad Gordo Slime
-
---- OLD ---
-# Version 2.1 / 2.2 / 2.3 / 2.4 / 2.5/6 / 2.7 / 2.8
 - Custom Load Distance increase (max 10 chunks)
 - Fix export/import system (re-export your saves!)
 - Notice if on 3rd Party Site
-- Custom Load Distance
-- Fix version number (2.6 was skipped)
-- Fixed more textures
-- Increased shader preformance
-- BRAND NEW REWORK OF SLIME TEXTURES
-- Increased load zones
-- Added "Cheats" option instead of debug
-- Adding Exporting/Importing system
-- More modern GUI's
-- Improving UI to be like updated versions
-- Added Version Number
-- Reduced bloom
