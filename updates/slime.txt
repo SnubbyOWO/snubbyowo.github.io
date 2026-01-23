@@ -1,5 +1,10 @@
 --- NEW ---
-# Version 3.0! Optimization Update!
+# Version 3.1 
+- Fixed No Shadows
+current issue for flashlight to be cut-off soon will be fixed
+
+--- OLD ---
+# Version  2.5/6 / 2.7 / 2.8 / 2.9 / 3.0
 - Made vacuuming smoother by reducing background load while it runs
 - Reduced lag spikes from slimes spawning and despawning
 - Cut down some background work that was running every frame (cmon snubs?!?!)
@@ -8,19 +13,8 @@
 - Lowered loading time for chunks
 - Low/Lowest quality now fully turns off heavy visual effects
 - Low/Lowest now uses lighter shadows and shorter view distance for better FPS
-
---- OLD ---
-# Version 2.3 / 2.4 / 2.5/6 / 2.7 / 2.8 /2.9
 - Objects toggle onto the vac like modern versions of slime rancher
 - Update barrier texture
 - Added button to plort collector
 - Capture Gameplay
 - Fix Slimes Despawning..?
-- New Zones Now Require a Key For Slime Doors
-- Auto Save Indicator
-- Loading Screen Icon Bouncy
-- Terraformed some places
-- Added Rad Gordo Slime
-- Custom Load Distance increase (max 10 chunks)
-- Fix export/import system (re-export your saves!)
-- Notice if on 3rd Party Site
