@@ -1,6 +1,8 @@
 --- NEW ---
-# Version 3.1 
+# Version 3.1 & 3.2
 - Fixed No Shadows
+- Added Potato Setting for Slimes
+- Fixed lighting for Hen Nests
 current issue for flashlight to be cut-off soon will be fixed
 
 --- OLD ---
