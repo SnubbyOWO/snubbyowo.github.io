@@ -1,6 +1,6 @@
 --- NEW ---
 # Version 3.4
-- MULTIPLAYER! Best when 2 players only but goes up to 4!
+- MULTIPLAYER! Best when 2 players only but goes up to 4! (might be SLIGHTLY buggy)
 - Changed plort shield texture
 - Fixed Phospher slime glow
 - Optimized a little more of the ranch
