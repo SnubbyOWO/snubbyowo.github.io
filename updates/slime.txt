@@ -4,6 +4,7 @@
 - Fixed Hunter Invs fully
 - Fixed Controller Binds
 - Made Clouds work with environment
+- Fixed water having weird circle
 - Changed textures of hunter slimes mouths
 - Optimized render distance setting
 - Optimized Animations
