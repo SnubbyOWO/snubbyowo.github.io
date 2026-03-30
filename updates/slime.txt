@@ -1,5 +1,11 @@
 --- NEW ---
-# Version 3.6
+# Version 3.6 Patch 1
+- Fixed Flashlight
+- Fixed Hunter Invs fully
+- Fixed Controller Binds
+- Made Clouds work with environment
+- Changed textures of hunter slimes mouths
+- Optimized render distance setting
 - Optimized Animations
 - Added Fog to environment
 - Updated name of game
@@ -10,6 +16,5 @@
 - Fixed slimes lighting
 - New Mobile Buttons
 - Ranch has original paths
-
 
 Make sure you stay updated for all the new patches and features!
