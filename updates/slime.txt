@@ -1,7 +1,10 @@
 --- NEW ---
-# Version 3.6 Patch 1
+# Version 3.6 Patch 2
+- Fixed Tar Slime
+- Fixed Pond Water Texture
+- Fixed Crop Vac Glitch
+- Fixed Hunter Slime Again
 - Fixed Flashlight
-- Fixed Hunter Invs fully
 - Fixed Controller Binds
 - Made Clouds work with environment
 - Fixed water having weird circle
