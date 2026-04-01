@@ -1,5 +1,9 @@
 --- NEW ---
-# Version 3.6 Patch 2
+# Version 3.6 Patch 3
+- Updated Honey Slime Texture
+- Readded Splat effects to slimes
+- Faster Multiplayer ping speed
+-- OLDER --
 - Fixed Tar Slime
 - Fixed Pond Water Texture
 - Fixed Crop Vac Glitch
