@@ -1,28 +1,6 @@
 --- NEW ---
-# Version 3.6 Patch 3
-- Updated Honey Slime Texture
-- Readded Splat effects to slimes
-- Faster Multiplayer ping speed
--- OLDER --
-- Fixed Tar Slime
-- Fixed Pond Water Texture
-- Fixed Crop Vac Glitch
-- Fixed Hunter Slime Again
-- Fixed Flashlight
-- Fixed Controller Binds
-- Made Clouds work with environment
-- Fixed water having weird circle
-- Changed textures of hunter slimes mouths
-- Optimized render distance setting
-- Optimized Animations
-- Added Fog to environment
-- Updated name of game
-- Fixed hotbar textures
-- Rain gets disabled in Low =< Graphics
-- Fixed shadows on water
-- Newer puddle slime texture
-- Fixed slimes lighting
-- New Mobile Buttons
-- Ranch has original paths
+# Version 3.7
+- Multiplayer patches
+(includes better optimzations, better handling, less lag; etc)
 
 Make sure you stay updated for all the new patches and features!
