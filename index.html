@@ -1,229 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name='admaven-placement' content=BqdCFqjsF>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <meta name='admaven-placement' content='BqdCFqjsF'>
     <link rel="shortcut icon" href="ico/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="snubby.jpg, snubby, snubs, slime rancher, slime, web, html5, rancher, chromebook, slimerancher, games, unity, fnaf, FNAF, fnaffree, free, game">
-    <meta property="og:title" content="< Snubby >">
+    <meta name="keywords" content="snubby, snubs, slime rancher, web, html5, games, unity, chromebook">
+    <meta property="og:title" content="Snubby">
     <meta property="og:image" content="https://snubby.top/img/snubs.png">
     <meta name="description" content="All of my projects/works over time!">
     <meta name="og:description" content="All of my projects/works over time!">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/Load.js"></script> <!--This has like the random stuff for example the #playlist-->
-    <script src="js/Boot.js"></script> <!--This is the boot thing (SnubOS)-->
-    <script src="js/Projects.js"></script> <!--This handles the projects-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="js/Load.js"></script>
+    <script src="js/Boot.js"></script>
+    <script src="js/Projects.js"></script>
 </head>
 
 <body>
     <div id="boot-screen">
-        <!--Boot screen thing-->
         <div id="boot-screen-text"></div>
     </div>
-    <!--Kinda like a welcoming thing or sm-->
-    <header>
-        <h1 id="headerchange">SnubOS</h1>
-        <input type="checkbox" id="inputchecker">
-                <label for="inputchecker">
-                  <img onclick="clickedlol();" src="img/snubs.png" class="profile">
-                </label>
-        </input>
-        <nav>
-            <p id="maybechange">Hey, I'm Snubby, a programmer that does mainly web development and other stuff. I do this because I just do and yeah. Also, don't take credit. Just show credit its not that hard.</p>
-            
-            <!--To show like what random message they got in the bios-->
-            <p id="random-message-display"></p>
-        </nav>
+
+    <!-- its cute or sm idk -->
+    <div class="bg-deco bg-deco-snub" aria-hidden="true"></div>
+    <div class="peek-snub peek-snub-tl" aria-hidden="true">
+        <img src="img/iconSlimeSnubs.png" alt="">
+    </div>
+    <div class="peek-snub peek-snub-tr" aria-hidden="true">
+        <img src="img/iconSlimeSnubs.png" alt="">
+    </div>
+    <div class="peek-snub peek-snub-bl" aria-hidden="true">
+        <img src="img/iconSlimeSnubs.png" alt="">
+    </div>
+    <div class="peek-snub peek-snub-br" aria-hidden="true">
+        <img src="img/iconSlimeSnubs.png" alt="">
+    </div>
+
+    <header class="hero-card">
+        <img src="img/snubs.png" class="profile" alt="Snubby profile image">
+        <h1>Snubby</h1>
+        <p class="bio">Hey, I'm Snubby - a programmer focused on web development and game stuff. Don't take credit. Just show credit, it's not that hard.</p>
     </header>
 
-    <section>
+    <section class="section-card">
         <h2>Featured Projects</h2>
         <div id="project-container">
-            <button id="prev">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.58 45.58" xml:space="preserve">
-                    <g>
-                        <path d="M45.506,33.532c-1.741-7.42-7.161-17.758-23.554-19.942V7.047c0-1.364-0.826-2.593-2.087-3.113
-                            c-1.261-0.521-2.712-0.229-3.675,0.737L1.305,19.63c-1.739,1.748-1.74,4.572-0.001,6.32L16.19,40.909
-                            c0.961,0.966,2.415,1.258,3.676,0.737c1.261-0.521,2.087-1.75,2.087-3.113v-6.331c5.593,0.007,13.656,0.743,19.392,4.313
-                            c0.953,0.594,2.168,0.555,3.08-0.101C45.335,35.762,45.763,34.624,45.506,33.532z"/>
-                    </g>
+            <button id="prev" aria-label="Previous project">
+                <svg viewBox="0 0 45.58 45.58" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M45.506,33.532c-1.741-7.42-7.161-17.758-23.554-19.942V7.047c0-1.364-0.826-2.593-2.087-3.113 c-1.261-0.521-2.712-0.229-3.675,0.737L1.305,19.63c-1.739,1.748-1.74,4.572-0.001,6.32L16.19,40.909 c0.961,0.966,2.415,1.258,3.676,0.737c1.261-0.521,2.087-1.75,2.087-3.113v-6.331c5.593,0.007,13.656,0.743,19.392,4.313 c0.953,0.594,2.168,0.555,3.08-0.101C45.335,35.762,45.763,34.624,45.506,33.532z"/>
                 </svg>
             </button>
-            <img id="project-image" src="img/slime.PNG">
-            <div id="project-description">
-                <nav>
-                    <p>Slime Rancher v0.2.1 WebGL Works on web! Come <a style="color: rgb(141, 148, 253);" href="https://dev.snubby.top/" target="_blank">Try it!</a> and check out the archive <a style="color: rgb(141, 148, 253);" href="https://dev.snubby.top/archive/" target="_blank">here!</a></p>
-                </nav>
+            <img id="project-image" src="img/slime.png" alt="Project image">
+            <div id="project-description" class="text-content">
+                <p>Slime Rancher but on web! Come <a href="https://slimeranchers.com/" target="_blank">Try it!</a> and check out the archive <a href="https://slimeranchers.com/archive/" target="_blank">here!</a></p>
             </div>
-            <button id="next">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.58 45.58" xml:space="preserve" transform="scale(-1, 1)">
-                    <g>
-                        <path d="M45.506,33.532c-1.741-7.42-7.161-17.758-23.554-19.942V7.047c0-1.364-0.826-2.593-2.087-3.113
-                            c-1.261-0.521-2.712-0.229-3.675,0.737L1.305,19.63c-1.739,1.748-1.74,4.572-0.001,6.32L16.19,40.909
-                            c0.961,0.966,2.415,1.258,3.676,0.737c1.261-0.521,2.087-1.75,2.087-3.113v-6.331c5.593,0.007,13.656,0.743,19.392,4.313
-                            c0.953,0.594,2.168,0.555,3.08-0.101C45.335,35.762,45.763,34.624,45.506,33.532z"/>
-                    </g>
+            <button id="next" aria-label="Next project">
+                <svg viewBox="0 0 45.58 45.58" xmlns="http://www.w3.org/2000/svg" transform="scale(-1, 1)">
+                    <path d="M45.506,33.532c-1.741-7.42-7.161-17.758-23.554-19.942V7.047c0-1.364-0.826-2.593-2.087-3.113 c-1.261-0.521-2.712-0.229-3.675,0.737L1.305,19.63c-1.739,1.748-1.74,4.572-0.001,6.32L16.19,40.909 c0.961,0.966,2.415,1.258,3.676,0.737c1.261-0.521,2.087-1.75,2.087-3.113v-6.331c5.593,0.007,13.656,0.743,19.392,4.313 c0.953,0.594,2.168,0.555,3.08-0.101C45.335,35.762,45.763,34.624,45.506,33.532z"/>
                 </svg>
             </button>
         </div>
     </section>
-    <section id="vtuber-stuff">
-        <h2>Noticed By Vtubers</h2>
-        <ul>
-            <li>
-                <video id="sora" data-src="" controls></video>
-                <p>Randomized</p>
-                <div class="center-text"><a href="https://www.youtube.com/@SoraVT.">Sora ASMR</a></div>
-            </li>
-            <li>
-                <video data-src="vids/BethyVA.mp4" controls></video>
-                <div class="center-text"><a href="https://youtube.com/@BethyVA">BethyVA</a></div>
-            </li>
-            <li>
-                <video id="annie" data-src="" controls></video>
-                <p>Randomized</p>
-                <div class="center-text"><a href="https://www.youtube.com/@anniepants">Anniepants</a></div>
-            </li>
-            <li>
-                <video data-src="vids/GxAura.mp4" controls></video>
-                <div class="center-text"><a href="https://www.youtube.com/@GXAuraOfficial">GxAura</a></div>
-            </li>
-            <li>
-                <video id="ironmouse" data-src="" controls></video>
-                <p>Randomized</p>
-                <div class="center-text"><a href="https://www.youtube.com/@ironmouseparty">Ironmouse</a></div>
-            </li>
-            <li>
-                <video data-src="vids/Kitanya_is_here.mp4" controls></video>
-                <div class="center-text"><a href="https://www.twitch.tv/kitanya_is_here">kitanya_is_here</a></div>
-            </li>
-            <li>
-                <video data-src="vids/Cweamcat.mp4" controls></video>
-                <div class="center-text"><a href="https://www.twitch.tv/Cweamcat">Cweamcat</a></div>
-            </li>
-            <li>
-                <video data-src="vids/Foxy.mp4" controls></video>
-                <div class="center-text"><a href="https://www.twitch.tv/foxplushy">Foxplushy</a></div>
-            </li>
-            <li>
-                <video data-src="vids/Araagomi.mp4" controls></video>
-                <div class="center-text"><a href="https://www.twitch.tv/Araagomi">Araagomi</a></div>
-            </li>
-            <li>
-                <video data-src="vids/Inksie.mp4" controls></video>
-                <div class="center-text"><a href="https://www.twitch.tv/inksie">Inksie</a></div>
-            </li>
-            <li>
-                <video data-src="vids/Kaimeriss.mp4" controls></video>
-                <div class="center-text"><a href="https://www.twitch.tv/kaimeriss">Kaimeriss</a></div>
-            </li>  
-            <li>
-                <video data-src="vids/ShinASMR.mp4" controls></video>
-                <div class="center-text"><a href="https://www.twitch.tv/shinasmr">ShinASMR</a></div>
-            </li>  
-            <li>
-                <video data-src="vids/Darlingstrawb.mp4" controls></video>
-                <div class="center-text"><a href="https://www.twitch.tv/darlingstrawb">Darlingstrawb</a></div>
-            </li>  
-            <li>
-                <video id="bon" data-src="" controls></video>
-                <p>Randomized</p>
-                <div class="center-text"><a href="https://www.twitch.tv/bon73p">Bon</a></div>
-            </li> 
-            <li>
-                <video data-src="vids/AureaCorvae.mov" controls></video>
-                <div class="center-text"><a href="https://www.twitch.tv/aureaCorvae">AureaCorvae</a></div>
-            </li>
-            <li>
-                <video data-src="vids/Mewbys.mp4" controls></video>
-                <div class="center-text"><a href="https://www.twitch.tv/mewbys">Mewbys</a></div>
-            </li>
-        </ul>
-        <p>this is for fun and jokes (please believe me)</p>
-    </section>
-    <br><br><br>
-    <section>
+
+    <section class="section-card">
         <h2>Unblocked Games</h2>
-        <div id="unblocked-games-container">
-            <div id="unblocked-game-description">
-                <nav>
-                    <p style="display:inline-flex;align-items:center;gap:8px;">
-                        Start My Education!
-                        <img src="https://startmyeducation.net/icon.png" style="width:24px;height:24px;display:block;">
-                    </p>
-                    <br>
-                    We offer many games, proxies, and other fun stuff to do during school hours! No downloads required, just open your browser and play! We've been around since 2020, providing games that work on Chromebooks and school computers. So join us and start having fun today!
-                    <br>
-                    <a style="color:white;" href="https://startmyeducation.net/" target="_blank">Play Now</a>
-                    <br>
-                    <a style="color:white;" href="https://discord.gg/fJxmmchjuR" target="_blank">Join Discord</a>
-                </nav>
+        <div id="ubg-container">
+            <div id="ubg-desc">
+                <p class="ug-title">
+                    <img src="https://startmyeducation.net/icon.png" class="inline-icon" alt="SME icon"> Start My Education!
+                </p>
+                <p>Games, proxies, and fun stuff to do during school hours. Works on Chromebooks and school computers - no downloads required.</p>
+                <div class="ug-links">
+                    <a class="slime-btn" href="https://startmyeducation.net/" target="_blank">Play Now</a>
+                    <a class="slime-btn slime-btn-alt" href="https://discord.gg/fJxmmchjuR" target="_blank">Join Discord</a>
+                </div>
             </div>
         </div>
     </section>
-    <br><br><br>
-    <!--All my info will be here-->
-    <footer>
-        <p>You can find me here,</p>
+
+    <footer class="section-card footer-card">
+        <p>Find me here</p>
         <div class="icon-container">
-            <a class="icons" href="https://discord.com/users/558453792593412127/" target="_blank">
-                <img src="img/discord.png" width="30" height="30"/>
+            <a class="icons" href="https://discord.com/users/558453792593412127/" target="_blank" title="Discord">
+                <img src="img/icons/discord.png" width="28" height="28" alt="Discord"/>
             </a>
-            <a class="icons" href="https://github.com/SnubbyOWO" target="_blank">
-                <img src="img/git.png" width="30" height="30"/>
+            <a class="icons" href="https://github.com/SnubbyOWO" target="_blank" title="GitHub">
+                <img src="img/icons/git.png" width="28" height="28" alt="GitHub"/>
             </a>
-            <a class="icons" href="https://steamcommunity.com/id/Snubbyjpg/" target="_blank">
-                <img src="img/steam.png" width="30" height="30"/>
+            <a class="icons" href="https://steamcommunity.com/id/Snubbyjpg/" target="_blank" title="Steam">
+                <img src="img/icons/steam.png" width="28" height="28" alt="Steam"/>
             </a>
-            <a href="https://paypal.me/snubbyjpg">
-                <svg width="32" height="32" viewBox="-1.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
-                        <g id="Dribbble-Light-Preview" transform="translate(-222.000000, -7559.000000)" fill="currentColor">
-                            <g id="icons" transform="translate(56.000000, 160.000000)">
-                                <path d="M182.475463,7404.9 C181.260804,7410.117 177.555645,7411 172.578656,7411 L171.078137,7419 L173.825411,7419 C174.325918,7419 174.53555,7418.659 174.627828,7418.179 C175.312891,7413.848 175.216601,7414.557 175.278788,7413.879 C175.337966,7413.501 175.664951,7413 176.049108,7413 C179.698098,7413 182.118387,7411.945 182.857614,7408.158 C183.120405,7406.811 183.034145,7405.772 182.475463,7404.9 M171.134306,7410.86 L170.011926,7417 L166.535456,7417 C166.206465,7417 165.954707,7416.598 166.006864,7416.274 L168.602682,7399.751 C168.670887,7399.319 169.045014,7399 169.484337,7399 L175.718111,7399 C179.409228,7399 181.894714,7400.401 181.319983,7404.054 C180.313953,7410.56 174.737157,7410 172.199514,7410 C171.760191,7410 171.203515,7410.428 171.134306,7410.86" id="paypal-[#140]"></path>
+            <a class="icons" href="https://paypal.me/snubbyjpg" title="PayPal">
+                <svg width="28" height="28" viewBox="-1.5 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                        <g transform="translate(-222.000000, -7559.000000)" fill="currentColor">
+                            <g transform="translate(56.000000, 160.000000)">
+                                <path d="M182.475463,7404.9 C181.260804,7410.117 177.555645,7411 172.578656,7411 L171.078137,7419 L173.825411,7419 C174.325918,7419 174.53555,7418.659 174.627828,7418.179 C175.312891,7413.848 175.216601,7414.557 175.278788,7413.879 C175.337966,7413.501 175.664951,7413 176.049108,7413 C179.698098,7413 182.118387,7411.945 182.857614,7408.158 C183.120405,7406.811 183.034145,7405.772 182.475463,7404.9 M171.134306,7410.86 L170.011926,7417 L166.535456,7417 C166.206465,7417 165.954707,7416.598 166.006864,7416.274 L168.602682,7399.751 C168.670887,7399.319 169.045014,7399 169.484337,7399 L175.718111,7399 C179.409228,7399 181.894714,7400.401 181.319983,7404.054 C180.313953,7410.56 174.737157,7410 172.199514,7410 C171.760191,7410 171.203515,7410.428 171.134306,7410.86"></path>
                             </g>
                         </g>
                     </g>
                 </svg>
             </a>
-            <a href="https://cash.app/$Snubbyjpg">
-                <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <a class="icons" href="https://cash.app/$Snubbyjpg" title="Cash App">
+                <svg width="28" height="28" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                     <path d="M31.453 4.625c-0.688-1.891-2.177-3.375-4.068-4.063-1.745-0.563-3.333-0.563-6.557-0.563h-9.682c-3.198 0-4.813 0-6.531 0.531-1.896 0.693-3.385 2.188-4.068 4.083-0.547 1.734-0.547 3.333-0.547 6.531v9.693c0 3.214 0 4.802 0.531 6.536 0.688 1.891 2.177 3.375 4.068 4.063 1.734 0.547 3.333 0.547 6.536 0.547h9.703c3.214 0 4.813 0 6.536-0.531 1.896-0.688 3.391-2.182 4.078-4.078 0.547-1.734 0.547-3.333 0.547-6.536v-9.667c0-3.214 0-4.813-0.547-6.547zM23.229 10.802l-1.245 1.24c-0.25 0.229-0.635 0.234-0.891 0.010-1.203-1.010-2.724-1.568-4.292-1.573-1.297 0-2.589 0.427-2.589 1.615 0 1.198 1.385 1.599 2.984 2.198 2.802 0.938 5.12 2.109 5.12 4.854 0 2.99-2.318 5.042-6.104 5.266l-0.349 1.604c-0.063 0.302-0.328 0.516-0.635 0.516h-2.391l-0.12-0.010c-0.354-0.078-0.578-0.432-0.505-0.786l0.375-1.693c-1.438-0.359-2.76-1.083-3.844-2.094v-0.016c-0.25-0.25-0.25-0.656 0-0.906l1.333-1.292c0.255-0.234 0.646-0.234 0.896 0 1.214 1.146 2.839 1.786 4.521 1.76 1.734 0 2.891-0.734 2.891-1.896s-1.172-1.464-3.385-2.292c-2.349-0.839-4.573-2.026-4.573-4.802 0-3.224 2.677-4.797 5.854-4.943l0.333-1.641c0.063-0.302 0.333-0.516 0.641-0.51h2.37l0.135 0.016c0.344 0.078 0.573 0.411 0.495 0.76l-0.359 1.828c1.198 0.396 2.333 1.026 3.302 1.849l0.031 0.031c0.25 0.266 0.25 0.667 0 0.906z"/>
                 </svg>
             </a>
         </div>
-        <!--To lazy to put a other like css property so i just put a mini style edit here-->
-        <a style="color:white;" href="mailto:help@snubby.top">Send A Email!<br>[help@snubby.top]</a>
-        <br><br><br><br><br><br><br><br><br><br><br><br> <!--bruh-->
-        <img src="img/SoraASMR_Snubby_Emote.png" width="100" height="100">
-        <p>Thank you Sora for this amazing emote.</p>
+        <a href="mailto:help@snubby.top">help@snubby.top</a>
     </footer>
-    <script>
-        // quick add for like lazy loading shit
-        document.addEventListener("DOMContentLoaded", function() {
-            const videos = document.querySelectorAll("video[data-src]");
-            
-            const load = (video) => {
-                if (video.getAttribute("data-src")) {
-                    video.src = video.getAttribute("data-src");
-                    video.removeAttribute("data-src");
-                }
-            };
-    
-            const scroll = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        load(entry.target);
-                        scroll.unobserve(entry.target);
-                    }
-                });
-            });
-    
-            videos.forEach(video => scroll.observe(video));
-        });
-    </script>
 </body>
 
 </html>

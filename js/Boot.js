@@ -1,10 +1,21 @@
 // Original code idea https://codepen.io/sammmmmmm/pen/MWPePOo
 document.title = "SnubOS - Booting...";
+let bootHasStarted = false;
 // Edited by Snubby.jpg
 document.addEventListener('DOMContentLoaded', function () {
     // for the boot screen text to have a nice shine effect
     const bootscreen = document.getElementById('boot-screen');
     const boot_text = document.getElementById('boot-screen-text');
+    const currentUrl = window.location.href;
+
+    if (currentUrl.includes('#skipintro')) {
+        if (bootscreen) {
+            bootscreen.style.display = "none";
+        }
+        document.body.style.overflowY = "scroll";
+        document.title = "SnubOS - Welcome.";
+        return;
+    }
 
     let index = 0;
     let SystemID = navigator.userAgent;
@@ -42,27 +53,26 @@ xX$&&&&&&&&&&&&&&&&&&$Xx$&&&&&&&&&&&$&&&&&&&&
     `
 
     const randomboot =[
-        'Yo Im Snubby', 
-        'Whats this message for again?', 
-        'Idk but like this is a message', 
-        'blah blah blah..', 
-        'I like trains', 
-        'This MIGHT be a message', 
-        'You should check out my Slime Rancher Decomp.!', 
-        '3.141592653589793238462643383279502884197169399375105820974944592307', 
-        'Im tired of making these messages', 
-        'I should make a random message generator', 
-        'I should do that..', 
-        'Hey, you. You’re finally awake. You were trying to cross the border, right? Walked right into that Imperial ambush, same as us, and that thief over there.', 
-        'Watch ironmouse on twitch!', 
-        'I LOVE GOTH GIRLS',
+        'Yo Im Snubby',
+        'Whats this message for again?',
+        'Idk but like this is a message',
+        'blah blah blah..',
+        'I like trains',
+        'This MIGHT be a message',
+        'You should check out Slime Rancher Web.!',
+        '3.141592653589793238462643383279502884197169399375105820974944592307',
+        'Im tired of making these messages',
+        'I should make a random message generator',
+        'I should do that..',
+        'Hey, you. You\'re finally awake. You were trying to cross the border, right? Walked right into that Imperial ambush, same as us, and that thief over there.',
         'Insert cash or select payment type',
-        'Watch aidenisalright on twitch!',
         'What if instead of snubby.jpg it was snubby-freaky.jpg',
         'Rain is so sigma...',
         '_vertexg707 is so cool',
         'https://startmyeducation.net/',
-        'aden anderson'
+        'aden anderson',
+        'slimeranchers.com',
+        'i LOVE slime rancher dead ass'
     ];
     const randomIndex = Math.floor(Math.random() * randomboot.length);
     const randomNumber = Math.random() * 100;
@@ -123,15 +133,12 @@ xX$&&&&&&&&&&&&&&&&&&$Xx$&&&&&&&&&&&$&&&&&&&&
         'Loading SnubOS...',
         'SnubOS Loaded',
         'Initializing SnubOS...',
-        'SnubOS: Collecting All Vtubers...',
-        'SnubOS: All Vtubers Collected',
         `SnubOS: ${randomboot[randomIndex]}`,
         'Booting SnubOS...',
         'SnubOS Ready To Boot\n'
     ];
 
-    // did it as one line since like im lazy
-    document.getElementById('random-message-display').innerHTML = 'You got: "' + randomboot[randomIndex] + '" as your random message!';
+    console.log('SnubOS: random message: ' + randomboot[randomIndex]);
 
     function displayMessage() {
         boot_text.innerText += messages[index] + '\n';
@@ -154,7 +161,16 @@ xX$&&&&&&&&&&&&&&&&&&$Xx$&&&&&&&&&&&$&&&&&&&&
 });
 
 function boot() {
+    if (bootHasStarted) {
+        return;
+    }
+    bootHasStarted = true;
+
     const bootscreen = document.getElementById('boot-screen');
+    if (!bootscreen) {
+        return;
+    }
+
     document.title = "SnubOS - Booted."
 
     bootscreen.classList.add('fade-out');
@@ -162,8 +178,5 @@ function boot() {
         bootscreen.style.display = "none"
         document.body.style.overflowY = "scroll"
         document.title = "SnubOS - Welcome."
-    }, 1500);
-    setTimeout(function() {
-        alert("bazinga");
-    }, 60000);
+    }, 1120);
 }
