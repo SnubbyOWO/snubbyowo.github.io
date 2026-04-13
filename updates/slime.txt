@@ -1,6 +1,8 @@
 --- NEW ---
-# Version 3.7
-- Multiplayer patches
-(includes better optimzations, better handling, less lag; etc)
+# Version 3.8
+- Readdition of Meteor Slime fully complete
+- Fixed crops not being able to vac randomly
+- Added some preloading to ensure better performance
+- More Multiplayer patches
 
 Make sure you stay updated for all the new patches and features!
