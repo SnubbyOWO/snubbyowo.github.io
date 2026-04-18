@@ -1,8 +1,11 @@
 --- NEW ---
-# Version 3.8
-- Readdition of Meteor Slime fully complete
-- Fixed crops not being able to vac randomly
-- Added some preloading to ensure better performance
-- More Multiplayer patches
+# Version 3.9
+- Optimize slime faces being called every frame???
+- Fixed LCD effect on market
+- Fix game not saving view distance/updating it
+- Fixed phopshor wing
+- Fixed rad aura warping
+- Fixed Spawn Constraint
+- Fixed resizing chat sretching
 
 Make sure you stay updated for all the new patches and features!
