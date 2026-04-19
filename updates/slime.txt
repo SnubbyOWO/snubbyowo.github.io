@@ -1,5 +1,10 @@
 --- NEW ---
-# Version 3.9
+# Version 3.9 Patch 1
+- Fixed Vac Dial
+- Optimized statue script
+- Preloading shaders
+- Fix some materials not receiving fog
+# Base ver
 - Optimize slime faces being called every frame???
 - Fixed LCD effect on market
 - Fix game not saving view distance/updating it
