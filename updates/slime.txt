@@ -4,6 +4,7 @@
 - Optimized statue script
 - Preloading shaders
 - Fix some materials not receiving fog
+- Public Server! Just for fun and to chat with people
 # Base ver
 - Optimize slime faces being called every frame???
 - Fixed LCD effect on market
