@@ -1,10 +1,12 @@
 --- NEW ---
-# Version 3.9 Patch 1
+# Version 3.9 Patch 1 + 2
+- Public Server! Just for fun and to chat with people (p1)
+- Fixed Control lock in multiplayer
+- Fixed Public server loading chunks when unneeded
 - Fixed Vac Dial
 - Optimized statue script
 - Preloading shaders
 - Fix some materials not receiving fog
-- Public Server! Just for fun and to chat with people
 # Base ver
 - Optimize slime faces being called every frame???
 - Fixed LCD effect on market
