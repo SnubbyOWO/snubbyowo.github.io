@@ -1,8 +1,11 @@
 --- NEW ---
-# Version 3.9 patch 3
-- Optimized a little more of the multiplayer, still again work in progress but what ever
-- fixed leaves culling in other objects
-- Fixed Mobile controlls more and have swipe controls
-- Made chat box more responsive on smaller screens
+# Version 4.0
+Just a note, sorry for the update spam; Multiplayer again is very beta and im really doing my best on it.
+
+- Fixed player lock in Multiplayer
+- Fixed entering in room code not validiating
+- Hide uneeded chunks in multiplayer
+- Near by slimes have priority in multiplayer
+- Fixed chat box not sizing and overflow
 
 Make sure you stay updated for all the new patches and features!
