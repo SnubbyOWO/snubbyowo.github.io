@@ -236,8 +236,11 @@ body.footer-link-hover .peek-snub-br {
   flex-shrink: 0;
 }
 
-#project-description {
+.project-copy {
   width: 34%;
+}
+
+#project-description {
   margin-top: 10px;
   color: var(--sr-soft);
   text-align: center;
@@ -246,13 +249,31 @@ body.footer-link-hover .peek-snub-br {
   font-size: 1rem;
 }
 
-#project-description a {
+.project-details {
+  width: 100%;
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 2px solid #dfe6ff;
+  color: var(--sr-soft);
+  text-align: center;
+  transition: opacity 0.4s ease-in-out;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.project-details[hidden] {
+  display: none;
+}
+
+#project-description a,
+#project-details a {
   color: #1ca7b9;
   font-weight: 700;
   text-decoration: none;
 }
 
-#project-description a:hover {
+#project-description a:hover,
+#project-details a:hover {
   color: var(--sr-pink-bright);
 }
 
@@ -446,8 +467,12 @@ img {
   }
 
   #project-description {
-    width: 100%;
     margin-top: 0;
+  }
+
+  .project-copy,
+  .project-details {
+    width: 100%;
   }
 
   .ug-links,
