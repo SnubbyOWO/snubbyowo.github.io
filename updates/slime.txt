@@ -1,19 +1,8 @@
 --- NEW ---
-# Version 3.9 Patch 1 + 2
-- Public Server! Just for fun and to chat with people (p1)
-- Fixed Control lock in multiplayer
-- Fixed Public server loading chunks when unneeded
-- Fixed Vac Dial
-- Optimized statue script
-- Preloading shaders
-- Fix some materials not receiving fog
-# Base ver
-- Optimize slime faces being called every frame???
-- Fixed LCD effect on market
-- Fix game not saving view distance/updating it
-- Fixed phopshor wing
-- Fixed rad aura warping
-- Fixed Spawn Constraint
-- Fixed resizing chat sretching
+# Version 3.9 patch 3
+- Optimized a little more of the multiplayer, still again work in progress but what ever
+- fixed leaves culling in other objects
+- Fixed Mobile controlls more and have swipe controls
+- Made chat box more responsive on smaller screens
 
 Make sure you stay updated for all the new patches and features!
