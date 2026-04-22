@@ -1,6 +1,7 @@
 --- NEW ---
-# Version 4.0
+# Version 4.0 Patch 1
 Just a note, sorry for the update spam; Multiplayer again is very beta and im really doing my best on it.
+- Fixed UI not locking player
 
 - Fixed player lock in Multiplayer
 - Fixed entering in room code not validiating
