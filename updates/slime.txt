@@ -1,5 +1,5 @@
 --- NEW ---
-# Version 4.0 Patch 1
+# Version 4.0 Patch 1 and 2
 Just a note, sorry for the update spam; Multiplayer again is very beta and im really doing my best on it.
 - Fixed UI not locking player
 
