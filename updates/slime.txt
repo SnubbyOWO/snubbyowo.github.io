@@ -1,6 +1,6 @@
 --- NEW ---
 # Version 4.1
-- Make multiplayer send less packets and make positions interpolated
-meaning that less things to send better preformance since its handled client side.
+- Make multiplayer send less packets and make positions interpolated.
+Meaning, less things to send equals better performance since its handled client side.
 
 Make sure you stay updated for all the new patches and features!
