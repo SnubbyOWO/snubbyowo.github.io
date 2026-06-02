@@ -1,12 +1,6 @@
 --- NEW ---
-# Version 4.0 Patch 1 and 2
-Just a note, sorry for the update spam; Multiplayer again is very beta and im really doing my best on it.
-- Fixed UI not locking player
-
-- Fixed player lock in Multiplayer
-- Fixed entering in room code not validiating
-- Hide uneeded chunks in multiplayer
-- Near by slimes have priority in multiplayer
-- Fixed chat box not sizing and overflow
+# Version 4.1
+- Make multiplayer send less packets and make positions interpolated
+meaning that less things to send better preformance since its handled client side.
 
 Make sure you stay updated for all the new patches and features!
