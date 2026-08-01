@@ -1,7 +1,7 @@
 --- NEW ---
 # Version 4.2
 - Major performance optimizations for singleplayer and multiplayer
-- Distant areas now only visually load for the player who is actually there (miltiplayer)
+- Distant areas now only visually load for the player who is actually there (multiplayer)
 - Fixed high quality shadows going through leaves
 - Improved multiplayer loading, syncing, and unnecessary network usage (lol)
 
