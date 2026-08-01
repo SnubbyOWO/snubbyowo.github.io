@@ -1,6 +1,8 @@
 --- NEW ---
-# Version 4.1
-- Make multiplayer send less packets and make positions interpolated.
-Meaning, less things to send equals better performance since its handled client side.
+# Version 4.2
+- Major performance optimizations for singleplayer and multiplayer
+- Distant areas now only visually load for the player who is actually there (miltiplayer)
+- Fixed high quality shadows going through leaves
+- Improved multiplayer loading, syncing, and unnecessary network usage (lol)
 
 Make sure you stay updated for all the new patches and features!
