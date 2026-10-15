@@ -6,6 +6,11 @@ const projects = [
         details: 'Has a ton of features: Multiplayer, Exporing and importing saves, Beta Scrapped Features, Backported Features, and much more!'
     },
     {
+        img: 'img/gears.png',
+        desc: 'Gears of War: Web! Come <a href="https://gow.snubby.top/" target="_blank">Try it!</a>',
+        details: 'It is a complete recompilation of the original Gears of War game, but for the web! It has a ton of features including Multiplayer and Campaign!'
+    },
+    {
         img: 'img/DDLC.png',
         desc: 'Doki Doki Literature Club Web Version! Source Code <a href="https://github.com/SecondThundeR/DokiDoki-RenPy" target="_blank">here!</a>',
         details: ''
